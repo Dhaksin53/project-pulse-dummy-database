@@ -1,0 +1,88 @@
+================================================================
+OPSIQ KNOWLEDGE BASE — MODULE 1: LIVE PROJECT DATA & RISK REGISTER
+================================================================
+Last Updated: May 2025 | Portfolio: 15 Projects | Total Value: $7.17M
+================================================================
+
+== ACTIVE PROJECT PORTFOLIO ==
+
+ID     | Client              | Industry       | Region        | Module           | Status    | Budget  | Spent% | Go-Live  | PM              | Risk
+-------|---------------------|----------------|---------------|------------------|-----------|---------|--------|----------|-----------------|--------
+KT-001 | Acme Manufacturing  | Manufacturing  | APAC          | S/4HANA          | Active    | $500K   | 78%    | Jun 2025 | Ravi Kumar      | HIGH
+KT-002 | Gulf Energy Co      | Energy         | Middle East   | SAP ECC          | Active    | $300K   | 45%    | Aug 2025 | Priya Sharma    | LOW
+KT-003 | RetailMax Europe    | Retail         | Europe        | SAP Ariba        | Delayed   | $750K   | 97%    | Mar 2025 | James Turner    | CRITICAL
+KT-004 | BioLife Pharma      | Healthcare     | North America | SuccessFactors   | Active    | $420K   | 62%    | Sep 2025 | Anitha Raj      | MEDIUM
+KT-005 | Sunrise Steel       | Manufacturing  | APAC          | S/4HANA          | Active    | $680K   | 55%    | Nov 2025 | Karthik M       | LOW
+KT-006 | NovaTech Logistics  | Logistics      | Europe        | SAP TM           | Active    | $310K   | 88%    | Apr 2025 | Marco Rossi     | HIGH
+KT-007 | Desert Palm Hotels  | Hospitality    | Middle East   | S/4HANA          | On Hold   | $250K   | 40%    | Oct 2025 | Fatima Al-Zahra | MEDIUM
+KT-008 | Pacific Foods       | Consumer Goods | APAC          | SAP Ariba        | Active    | $390K   | 70%    | Jul 2025 | Chen Wei        | MEDIUM
+KT-009 | Alpine Insurance    | BFSI           | Europe        | S/4HANA          | Active    | $820K   | 35%    | Jan 2026 | Sophie Müller   | LOW
+KT-010 | Metro Power Grid    | Utilities      | North America | SAP PM           | Active    | $560K   | 91%    | May 2025 | David Clarke    | CRITICAL
+KT-011 | Indus Textiles      | Manufacturing  | APAC          | SAP PP           | Active    | $190K   | 50%    | Dec 2025 | Suresh Babu     | LOW
+KT-012 | Atlantic Shipping   | Logistics      | North America | SAP EWM          | Active    | $470K   | 66%    | Aug 2025 | Maria Gonzalez  | MEDIUM
+KT-013 | Nordic Pharma       | Healthcare     | Europe        | SAP QM           | Completed | $280K   | 100%   | Jan 2025 | Erik Lindqvist  | LOW
+KT-014 | Gulf Retail Chain   | Retail         | Middle East   | S/4HANA          | Active    | $610K   | 48%    | Oct 2025 | Omar Hassan     | LOW
+KT-015 | SkyWings Airlines   | Aviation       | APAC          | S/4HANA          | Active    | $900K   | 82%    | Jun 2025 | Nisha Patel     | HIGH
+
+== CURRENT HEALTH STATUS (Pre-Calculated) ==
+RED (CRITICAL):  KT-003, KT-010
+AMBER (AT RISK): KT-001, KT-006, KT-015
+GREEN:           KT-002, KT-004, KT-005, KT-008, KT-009, KT-011, KT-012, KT-014
+GREY (Inactive): KT-007 (On Hold), KT-013 (Completed)
+
+== OPEN RISK REGISTER ==
+
+RISK-001 | KT-003 | CRITICAL | Go-live passed Mar 2025. Budget at 97%. Client formally escalated on Apr 10.
+          Recovery plan submitted. Contract review pending. Financial overrun: $72K projected.
+          Owner: James Turner | Escalated to: CEO & Delivery Head | Status: Recovery in progress.
+
+RISK-002 | KT-010 | CRITICAL | Go-live May 2025. UAT not started as of May 1. Budget at 91%.
+          Regulatory compliance window closing. NERC CIP requirements at risk.
+          Financial impact: $54K delay penalty clause. Owner: David Clarke | Escalation required immediately.
+
+RISK-003 | KT-001 | HIGH | Client UAT sign-off blocked for 3 weeks. Client internal restructuring freeze.
+          4–6 week delay projected. Cost impact: $18K additional consulting fees.
+          Owner: Ravi Kumar | Action: Escalate to Account Manager. Send formal delay notice.
+
+RISK-004 | KT-006 | HIGH | 14 informal scope additions accepted without CR. Budget at 88%.
+          Projected overrun: $45K. Go-live Apr 2025 already past.
+          Owner: Marco Rossi | Action: Raise CRs immediately. Freeze scope. Client negotiation needed.
+
+RISK-005 | KT-015 | HIGH | Lead FICO consultant resigned Apr 28. No replacement onboarded.
+          Critical path blocked for 3 weeks. Go-live Jun 2025 at severe risk.
+          Owner: Nisha Patel | Action: Deploy Arjun V. from bench immediately.
+
+RISK-006 | KT-004 | MEDIUM | HR data migration 2 weeks behind schedule. GDPR DPIA not started.
+          5 countries involved. Legal review pending. Owner: Anitha Raj.
+          Action: Start DPIA this week. Engage legal team. Accelerate migration.
+
+RISK-007 | KT-008 | MEDIUM | Supplier onboarding behind by 18%. 210 of 1,180 suppliers not yet registered.
+          Owner: Chen Wei | Action: Send onboarding escalation emails to top 50 suppliers.
+
+RISK-008 | KT-012 | MEDIUM | Integration testing with legacy WMS system failing 30% test cases.
+          Owner: Maria Gonzalez | Action: Schedule emergency integration workshop with client IT team.
+
+RISK-009 | KT-007 | MEDIUM | Project on hold due to client budget freeze. Consultant bench cost accruing.
+          Monthly holding cost: $12K. Owner: Fatima Al-Zahra | Action: Review hold period monthly.
+
+== MILESTONE TRACKER ==
+
+KT-001 | Blueprint: DONE | Build: DONE | SIT: DONE | UAT: BLOCKED (client) | Go-Live: DELAYED
+KT-002 | Blueprint: DONE | Build: 60% | SIT: Not started | UAT: Not started | Go-Live: Aug 2025 ON TRACK
+KT-003 | Blueprint: DONE | Build: DONE | SIT: DONE | UAT: DONE | Go-Live: MISSED (Mar 2025)
+KT-004 | Blueprint: DONE | Build: 80% | SIT: In progress | UAT: Not started | Go-Live: Sep 2025
+KT-005 | Blueprint: DONE | Build: 70% | SIT: Not started | UAT: Not started | Go-Live: Nov 2025 ON TRACK
+KT-006 | Blueprint: DONE | Build: DONE | SIT: 90% | UAT: 40% | Go-Live: OVERDUE (Apr 2025)
+KT-007 | Blueprint: DONE | Build: 30% | ON HOLD | | Go-Live: Oct 2025 AT RISK
+KT-008 | Blueprint: DONE | Build: 85% | SIT: In progress | UAT: Not started | Go-Live: Jul 2025
+KT-009 | Blueprint: DONE | Build: 20% | SIT: Not started | UAT: Not started | Go-Live: Jan 2026 ON TRACK
+KT-010 | Blueprint: DONE | Build: DONE | SIT: DONE | UAT: NOT STARTED | Go-Live: CRITICAL (May 2025)
+KT-011 | Blueprint: DONE | Build: 50% | SIT: Not started | UAT: Not started | Go-Live: Dec 2025 ON TRACK
+KT-012 | Blueprint: DONE | Build: 75% | SIT: FAILING 30% | UAT: Not started | Go-Live: Aug 2025
+KT-013 | ALL PHASES COMPLETE | Go-Live: Jan 2025 | CSAT: 9.0/10 | CLOSED
+KT-014 | Blueprint: DONE | Build: 55% | SIT: Not started | UAT: Not started | Go-Live: Oct 2025 ON TRACK
+KT-015 | Blueprint: DONE | Build: 88% | SIT: 60% | UAT: Not started | Go-Live: Jun 2025 AT RISK
+
+================================================================
+END OF MODULE 1
+================================================================

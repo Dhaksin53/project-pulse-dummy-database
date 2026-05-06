@@ -1,0 +1,107 @@
+================================================================
+OPSIQ KNOWLEDGE BASE — MODULE 2: BUDGET, RESOURCES & KPI DASHBOARD
+================================================================
+Last Updated: May 2025 | Firm: Global SAP Consulting | Headcount: 168 Active Consultants
+================================================================
+
+== BUDGET & FINANCIAL SNAPSHOT ==
+
+PORTFOLIO TOTAL VALUE: $7,170,000
+TOTAL SPENT TO DATE: $4,230,000 (59% of portfolio)
+PROJECTED OVERRUNS: $189,000 across 4 projects
+
+Project Budget Detail:
+KT-001 | Budget: $500K | Spent: $390K (78%) | Remaining: $110K | Overrun Risk: $18K
+KT-002 | Budget: $300K | Spent: $135K (45%) | Remaining: $165K | On Track
+KT-003 | Budget: $750K | Spent: $727K (97%) | Remaining: $23K | OVERRUN: $72K projected
+KT-004 | Budget: $420K | Spent: $260K (62%) | Remaining: $160K | On Track
+KT-005 | Budget: $680K | Spent: $374K (55%) | Remaining: $306K | On Track
+KT-006 | Budget: $310K | Spent: $273K (88%) | Remaining: $37K | OVERRUN: $45K projected
+KT-007 | Budget: $250K | Spent: $100K (40%) | ON HOLD | Accruing $12K/month bench cost
+KT-008 | Budget: $390K | Spent: $273K (70%) | Remaining: $117K | Watch
+KT-009 | Budget: $820K | Spent: $287K (35%) | Remaining: $533K | Healthy
+KT-010 | Budget: $560K | Spent: $509K (91%) | Remaining: $51K | OVERRUN: $54K penalty risk
+KT-011 | Budget: $190K | Spent: $95K (50%)  | Remaining: $95K  | On Track
+KT-012 | Budget: $470K | Spent: $310K (66%) | Remaining: $160K | Watch
+KT-013 | Budget: $280K | Spent: $280K (100%)| COMPLETED | Final CSAT: 9.0/10
+KT-014 | Budget: $610K | Spent: $293K (48%) | Remaining: $317K | Healthy
+KT-015 | Budget: $900K | Spent: $738K (82%) | Remaining: $162K | AT RISK
+
+FINANCIAL HEALTH RULE:
+- Budget < 70% and on schedule = HEALTHY
+- Budget 70–85% = WATCH
+- Budget > 85% with 20%+ timeline left = AMBER ALERT
+- Budget > 95% = RED CRITICAL
+
+== RESOURCE ALLOCATION & BENCH STATUS ==
+
+TOTAL CONSULTANTS: 168 | DEPLOYED: 142 | ON BENCH: 26 | UTILISATION: 84.5%
+
+AVAILABLE ON BENCH NOW (Immediate Deployment):
+Name        | Specialisation       | Experience | Availability
+------------|---------------------|------------|---------------
+Arjun V.    | S/4HANA FICO        | 8 years    | AVAILABLE NOW — Recommended for KT-015
+Sara K.     | SAP Ariba           | 5 years    | AVAILABLE NOW
+Raj M.      | SAP Basis/BTP       | 6 years    | AVAILABLE NOW
+Meena S.    | SAP SD              | 4 years    | AVAILABLE NOW
+Thomas B.   | SAP WM/EWM          | 5 years    | AVAILABLE NOW — Recommended for KT-012
+
+AVAILABLE SOON:
+Name        | Specialisation       | Experience | Available From
+------------|---------------------|------------|---------------
+Deepa R.    | SuccessFactors HR   | 7 years    | Available May 15 — Ideal for KT-004
+Liu W.      | SAP Integration/BTP | 9 years    | Available May 20
+Hassan M.   | SAP EWM/TM          | 6 years    | Available June 1
+
+CONSULTANTS ON ACTIVE PROJECTS (with availability for additional support):
+Name           | Project | Role            | % Free
+---------------|---------|-----------------|-------
+Suresh Babu    | KT-011  | S/4HANA MM/PP   | 20% available
+Priya Sharma   | KT-002  | SAP SD Lead     | 10% available (limited)
+Karthik M.     | KT-005  | S/4HANA Lead    | Fully deployed
+
+== SKILLS MATRIX ==
+
+SAP S/4HANA FICO:     12 consultants | Senior: 4 | Mid: 5 | Junior: 3
+SAP S/4HANA SD/MM:    18 consultants | Senior: 6 | Mid: 8 | Junior: 4
+SAP Ariba:            8 consultants  | Senior: 3 | Mid: 3 | Junior: 2
+SuccessFactors:       10 consultants | Senior: 3 | Mid: 4 | Junior: 3
+SAP BTP/Integration:  6 consultants  | Senior: 2 | Mid: 3 | Junior: 1
+SAP EWM/TM:           7 consultants  | Senior: 3 | Mid: 2 | Junior: 2
+SAP PP/QM/PM:         14 consultants | Senior: 4 | Mid: 6 | Junior: 4
+
+== KPI DASHBOARD — MAY 2025 ==
+
+PORTFOLIO KPIs:
+- Projects on track or ahead: 9/15 (60%)
+- Projects at risk or critical: 5/15 (33%)
+- On-time delivery rate (completed projects): 87%
+- Average budget utilisation at go-live: 94%
+- Client CSAT average: 8.9/10
+- Senior consultant utilisation: 96%
+
+REGIONAL PERFORMANCE:
+Region         | Projects | Critical | Amber | Green | Avg Budget Used
+---------------|----------|----------|-------|-------|----------------
+APAC           | 5        | 0        | 2     | 3     | 67%
+Europe         | 4        | 1        | 1     | 1+1   | 80%
+Middle East    | 3        | 0        | 0     | 2+1   | 44%
+North America  | 3        | 1        | 0     | 2     | 73%
+
+TOP PERFORMER: Middle East — lowest avg spend, all active projects GREEN
+HIGHEST RISK REGION: Europe — KT-003 CRITICAL, KT-006 AMBER
+DELIVERY HEAD ALERTS REQUIRED: KT-003 (Europe), KT-010 (North America)
+
+== ESCALATION THRESHOLDS ==
+
+MEDIUM risk → Notify Project Manager
+HIGH risk unresolved > 5 days → Notify Account Manager
+CRITICAL / RED project → Notify Delivery Head within 24 hours
+Contract breach threat → Notify CEO immediately
+
+DELIVERY HEAD: [Name on file] | Response SLA: 24 hours for CRITICAL
+ACCOUNT MANAGER contact triggered at: HIGH risk + 5 days unresolved
+
+================================================================
+END OF MODULE 2
+================================================================

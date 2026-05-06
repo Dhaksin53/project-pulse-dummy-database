@@ -1,0 +1,161 @@
+================================================================
+OPSIQ KNOWLEDGE BASE — MODULE 3: SAP CONSULTANT KNOWLEDGE (ConsultantIQ)
+================================================================
+Common SAP configuration questions, T-codes, step-by-step guides, errors and fixes
+================================================================
+
+== GOODS RECEIPT & INVENTORY ==
+
+Q: How do I post a Goods Receipt in SAP?
+A: Use T-code MIGO
+Steps:
+1. Go to MIGO → Select "Goods Receipt" from dropdown → Select "Purchase Order"
+2. Enter the Purchase Order number → Press Enter
+3. System auto-populates line items. Check quantities and storage locations.
+4. Set movement type to 101 (GR against PO)
+5. Check the "Item OK" checkbox for each line
+6. Post the document. Note the Material Document number.
+7. Verify stock update: T-code MMBE (stock overview) or MB52 (warehouse stock)
+
+Common Errors:
+- "No goods receipt possible for PO item": PO delivery completed indicator set. Check ME23N.
+- "Movement not allowed": Check plant/storage location configuration. Use OMJJ.
+- Quantity mismatch: Check tolerance limits in MIGO settings.
+
+Q: How do I reverse a Goods Receipt?
+A: Use MIGO → movement type 102 (Reversal of GR)
+Enter original material document number → post reversal.
+
+Q: How do I check stock levels?
+A: MMBE = Stock Overview (by material/plant/storage location)
+   MB52 = Warehouse stocks report
+   MB51 = Material document list
+
+== FINANCIAL ACCOUNTING ==
+
+Q: How do I reverse an FI document?
+A: Use T-code FB08
+Steps:
+1. Enter document number, company code, fiscal year
+2. Enter reversal reason (01=error posting, 02=wrong account, etc.)
+3. Enter reversal posting date
+4. Post → system creates mirror document with opposite entries
+
+Q: How do I run the automatic payment run (F110)?
+A: T-code F110
+Steps:
+1. Enter Run Date and Identification (e.g., today's date + "AP01")
+2. Tab "Parameters": Enter company code, payment methods, next payment date
+3. Tab "Free selection": optionally filter by vendor or due date
+4. Click "Proposal" → system calculates which invoices to pay
+5. Review proposal → Check for exceptions
+6. Click "Payment run" → system posts payment documents
+7. Print payment media if required
+
+Common Errors:
+- "No payment method found": Check vendor master XK02 → Payment transactions tab
+- "Bank sub-account not defined": Configure in FBZP → House banks
+
+Q: How do I configure payment methods?
+A: T-code FBZP → Payment methods per company code → maintain bank accounts and GL mapping
+
+Q: How do I create a Cost Centre?
+A: T-code KS01
+1. Enter Controlling Area (OKKP to define if not done)
+2. Enter Cost Centre ID, validity dates
+3. Fill: Name, cost centre category (E=production, F=admin, etc.), responsible person
+4. Assign profit centre if required
+5. Save
+
+Cost Centre Reports: KSB1 (actual line items), KSBL (plan vs actual)
+Cost Centre Groups: KSH1
+
+Q: How do I create a Vendor Master?
+A: T-code XK01 (centralised), MK01 (purchasing only)
+1. Enter Company Code and Purchasing Organisation
+2. General tab: Name, address, country, language
+3. Company code tab: Reconciliation account, payment terms
+4. Purchasing tab: Order currency, payment terms, incoterms
+5. Bank tab: Add bank details for payment run
+
+Change vendor: XK02 | Display vendor: XK03 | Block vendor: XK05
+
+Q: How do I create a Tax Code?
+A: T-code FTXP
+1. Select country → Enter new tax code (e.g., V8 for 8% input tax)
+2. Enter description
+3. Set tax type (V=input, A=output)
+4. Enter percentage rate
+5. Assign GL accounts via OB40
+
+== SAP ARIBA ==
+
+Q: How do I create a Sourcing Project in Ariba?
+A: Steps:
+1. Login to Ariba Sourcing → Create → Sourcing Project
+2. Select template: RFP (Request for Proposal), RFQ (Request for Quotation), or Auction
+3. Define project team: add Owner, Observers, Suppliers
+4. Set timeline: Publish date, Bid due date, Award date
+5. Add commodity codes and contract templates
+6. Publish → Suppliers receive email invitations
+7. Monitor responses in the "Responses" tab
+8. Score and compare bids → Create award recommendation
+9. Create contract from awarded response
+
+Q: How do I onboard suppliers in Ariba?
+A: Supplier Management → Invite Supplier → Enter supplier email
+Supplier completes registration profile → Approval workflow triggers → Approved supplier added to network
+
+Common Errors:
+- Supplier says "no invitation received": Check spam/junk. Resend from Supplier Management.
+- Duplicate supplier warning: Check existing supplier by D-U-N-S number or tax ID.
+
+== SUCCESSFACTORS ==
+
+Q: How do I set up an Onboarding programme?
+A: Admin Centre → Onboarding 2.0 → Onboarding Programme
+Steps:
+1. Create programme → select country template (compliance forms vary by country)
+2. Configure task list: document collection, equipment request, buddy assignment
+3. Set timeline: Day 0, Day 1, Day 30 tasks
+4. Configure compliance forms by country (I-9 for US, P46 for UK, Form 16 for India)
+5. Enable e-signature via DocuSign integration if available
+6. Test programme with sandbox user before go-live
+
+Q: How do I run a payroll simulation?
+A: Payroll Control Centre → Payroll simulation run → Select pay group → Execute
+Review results in payroll results log before running the live payroll.
+
+== INTEGRATION & BTP ==
+
+Q: How do I connect SAP S/4HANA to a third-party system via BTP?
+A: Use SAP Integration Suite (BTP)
+Steps:
+1. BTP Cockpit → Integration Suite → Cloud Integration
+2. Create Integration Flow (iFlow)
+3. Define sender adapter (e.g., SOAP, REST, IDOC)
+4. Add message mapping if data format differs
+5. Define receiver adapter → target system endpoint
+6. Deploy iFlow → Monitor in Operations tab
+Expert contact: Liu W. (9 yrs BTP) — Available May 20
+
+== ESCALATION DIRECTORY ==
+
+If ConsultantIQ cannot answer, escalate to these experts:
+
+Module               | Expert Name  | Experience | Status
+---------------------|--------------|------------|---------------------------
+S/4HANA FICO         | Arjun V.     | 8 years    | ON BENCH — Available NOW
+S/4HANA MM/PP        | Suresh Babu  | 6 years    | KT-011 — 20% available
+S/4HANA SD           | Priya Sharma | 10 years   | KT-002 — Limited capacity
+SAP Ariba            | Sara K.      | 5 years    | ON BENCH — Available NOW
+SuccessFactors       | Deepa R.     | 7 years    | Available May 15
+SAP Integration/BTP  | Liu W.       | 9 years    | Available May 20
+SAP EWM/TM           | Hassan M.    | 6 years    | Available June 1
+
+RESPONSE RULE: Always give T-code first, then numbered steps, then common errors.
+End complex answers with: "Need more help? Escalate to [Expert Name] — [availability]"
+
+================================================================
+END OF MODULE 3
+================================================================
