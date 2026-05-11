@@ -1,0 +1,29 @@
+=== Case Studies ===
+
+ ID Client Industry         SAP Module Project Duration  Team Size Budget (USD)  Custom Objects Migrated                             Outcome 1                           Outcome 2                           Outcome 3 Compliance Achieved  CSAT Score                                     Relevance Tags
+  1   Manufacturing S/4HANA Full Suite        18 months         12     $500,000                      340            40% faster month-end close     Zero data loss during migration     Go-live on time across 8 plants       None required         9.2        manufacturing, s4hana, migration, month-end
+  2          Retail          SAP Ariba        12 months          9     $330,000                        0 1,180 suppliers onboarded in 5 months        35% faster procurement cycle Phased go-live with zero disruption       None required         8.8              retail, ariba, procurement, suppliers
+  3      Healthcare  SuccessFactors EC        14 months         10     $400,000                        0    30% reduction in HR admin overhead  87% employee self-service adoption   GDPR compliant across 3 countries                GDPR         9.0 healthcare, successfactors, hr, gdpr, multiCountry
+  4       Logistics         SAP TM/EWM        10 months          7     $280,000                        0        28% reduction in freight costs    99.2% shipment accuracy achieved   Integrated with 4 carrier systems       None required         8.9             logistics, tm, ewm, freight, warehouse
+  5            BFSI       S/4HANA FICO        16 months         11     $480,000                        0    Real-time financial reporting live 100% regulatory compliance achieved           SOX and IFRS 17 compliant           SOX, IFRS         9.1         bfsi, fico, finance, regulatory, sox, ifrs
+  6       Utilities             SAP PM        12 months          8     $350,000                        0   45% reduction in unplanned downtime   Predictive maintenance model live     Integrated with IoT sensor data       None required         8.7               utilities, pm, maintenance, downtime
+
+
+
+=== HOW TO USE ===
+
+                                     HOW YOUR AGENT READS THIS FILE
+                                                                NaN
+                           MATCHING LOGIC (column: Relevance Tags):
+1. When an RFP arrives, the agent reads the 'Relevance Tags' column
+        2. It matches tags against detected Industry and SAP Module
+              3. It selects the 2-3 rows with the highest tag match
+      4. Those rows become Section 4 (Case Studies) of the proposal
+                                                                NaN
+                                                UPDATING THIS FILE:
+  - Add new rows below existing data — do not change column headers
+                       - CSAT must be a number between 1.0 and 10.0
+            - Relevance Tags: comma-separated, lowercase, no spaces
+                - Budget: include $ sign and commas (e.g. $450,000)
+
+

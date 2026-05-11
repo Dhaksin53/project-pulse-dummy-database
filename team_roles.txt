@@ -1,0 +1,21 @@
+=== Team Roles ===
+
+                             Role Seniority  Min Experience (yrs) Billable?                                              Apply When        SAP Modules Default Allocation %
+                    Delivery Head  Director                    12        No                               Always — every engagement        All modules       0% (oversight)
+               Solution Architect Principal                    10       Yes                               Always — every engagement        All modules                 100%
+                S/4HANA FICO Lead    Senior                     7       Yes             S/4HANA, ECC engagements with finance scope S/4HANA, ECC, FICO                 100%
+               S/4HANA MM/SD Lead    Senior                     6       Yes     S/4HANA engagements with procurement or sales scope    S/4HANA, MM, SD                 100%
+        SAP Ariba Functional Lead    Senior                     5       Yes                               All SAP Ariba engagements              Ariba                 100%
+              SuccessFactors Lead    Senior                     6       Yes                          All SuccessFactors engagements  SuccessFactors EC                 100%
+       SAP TM/EWM Functional Lead    Senior                     6       Yes        Logistics, transportation, warehouse engagements            TM, EWM                 100%
+                   SAP PP/QM Lead    Senior                     5       Yes Manufacturing with production planning or quality scope             PP, QM                 100%
+                      SAP PM Lead    Senior                     5       Yes   Utilities, manufacturing with plant maintenance scope                 PM                 100%
+  SAP BTP / Integration Architect    Expert                     8       Yes            Any engagement with multi-system integration         BTP, PI/PO                 100%
+Basis / Infrastructure Consultant    Senior                     5       Yes                                       S/4HANA, ECC only       S/4HANA, ECC              50–100%
+                     Test Manager    Senior                     6       Yes                               Always — every engagement        All modules                 100%
+           Change Management Lead    Senior                     7       Yes    Engagements with >500 users or multi-country rollout        All modules              50–100%
+            PMO / Project Manager    Senior                     6       Yes                               Always — every engagement        All modules                 100%
+              Data Migration Lead    Senior                     6       Yes  When legacy data migration or custom objects mentioned        All modules                 100%
+ Regulatory/Compliance Specialist    Expert                     8       Yes                   GDPR, FDA, SOX, IFRS mentioned in RFP        All modules                  50%
+
+
